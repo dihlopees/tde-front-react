@@ -1,9 +1,9 @@
 import './Header.css';
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <div className="header-class">
-      <p>Header</p>
+      <h4>Header {title}</h4>
     </div>
   );
 };
