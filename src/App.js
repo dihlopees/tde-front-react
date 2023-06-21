@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import OrderComponent from './components/OrderComponent';
+import Todo from './pages/Todo'
+// import Header from './components/Header';
+// import OrderComponent from './components/OrderComponent';
 
 function App() {
   const [array, setArray] = useState([5, 10, 60, 20, 2]);
@@ -18,12 +19,14 @@ function App() {
   };
   return (
     <div>
-      <Header title={newTitle} />
+      {/* <Header title={newTitle} />
       <OrderComponent arrayNumber={array} />
 
       <input value={title} onChange={(event) => setTitle(event.target.value)} />
       <button onClick={setarH4}>Setar Titulo</button>
-      <button onClick={orderArray}>Ordernar números</button>
+      <button onClick={orderArray}>Ordernar números</button> */}
+
+      <Todo />
     </div>
   );
 }
